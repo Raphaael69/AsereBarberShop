@@ -7,31 +7,85 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header simple -->
+
+    <!-- HEADER -->
     <header class="top-header">
-    <h1>Bienvenido a AsereBarberShop</h1>
-    <a href="#" class="btn-login">Iniciar sesión</a>
+        <h1>Bienvenido a AsereBarberShop</h1>
+        <a href="#" class="btn-login" id="btn-mostrar-login">Iniciar sesión</a>
     </header>
 
+    <hr class="linea-separadora">
 
-    <hr>
+    <!-- FORMULARIO DE LOGIN (oculto al inicio) -->
+    <div id="login-box" class="login-box">
+        <h3>Iniciar sesión</h3>
+        
+        <form id="form-login">
+            <div class="campo">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" placeholder="Tu usuario" required>
+            </div>
 
+            <div class="campo">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" placeholder="Tu contraseña" required>
+            </div>
+
+            <button type="submit" class="btn-entrar">Entrar</button>
+        </form>
+
+        <p class="texto-crear">¿No tienes cuenta? <a href="#">Crear una cuenta</a></p>
+    </div>
+
+    <!-- DESCRIPCIÓN -->
     <p class="descripcion">
-    En AsereBarberShop  ofrecemos una experiencia de barbería que combina estilo y cuidado personal. 
-    Nuestro equipo está dedicado a proporcionar cortes de cabello precisos y modernos, 
-    así como servicios especializados como el perfilado de cejas y afeitado de barba .
+        En AsereBarberShop ofrecemos una experiencia de barbería que combina estilo y cuidado personal. 
+        Nuestro equipo está dedicado a proporcionar cortes de cabello precisos y modernos, 
+        así como servicios especializados como el perfilado de cejas y afeitado de barba.
     </p>
+
     <h2 class="titulo-sucursal">Elige la sucursal</h2>
 
+    <!-- TARJETA SUCURSAL -->
     <a href="sucursal.html" class="tarjeta-sucursal">
-    <div class="tarjeta-img">
-        <img src="https://scontent.fscl18-1.fna.fbcdn.net/v/t39.30808-6/793436595_2953091615043195_4191550733602557492_n.jpg?stp=dst-jpg_tt6&cstp=mx1024x1024&ctp=s1024x1024&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGoQwX-djt-WILl4w-Ux83n6pf-68epN8Tql_7rx6k3xPd9LUtSit1TlyT8m4xd_YzSGFDjZtShdxL8zGnRtsmw&_nc_ohc=FLUX2xma_pMQ7kNvwFOucNy&_nc_oc=Adrx0oxCGWcDRB7TxazXhcNHtSwjwZf_Us1JH6cA895dYIB_thA6G4lwLm3OdKq8eNY&_nc_zt=23&_nc_ht=scontent.fscl18-1.fna&_nc_gid=5pJMbXfy0vs1vkh_KXJvIg&_nc_ss=7b2a8&oh=00_AQL6En76XiLB7CEOlQLWoTwEE5Zt32POqvjGiaGmhK-G4A&oe=6A9FB87A" alt="Logo AsereBarberShop">
-    </div>
-    <div class="tarjeta-info">
-        <h3>AsereBarberShop</h3>
-        <p>Av. Irarrázaval 2401, Ñuñoa, Santiago</p>
-    </div>
+        <div class="tarjeta-img">
+            <img src="https://scontent.fscl18-1.fna.fbcdn.net/v/t39.30808-6/793436595_2953091615043195_4191550733602557492_n.jpg?stp=dst-jpg_tt6&cstp=mx1024x1024&ctp=s1024x1024&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGoQwX-djt-WILl4w-Ux83n6pf-68epN8Tql_7rx6k3xPd9LUtSit1TlyT8m4xd_YzSGFDjZtShdxL8zGnRtsmw&_nc_ohc=FLUX2xma_pMQ7kNvwFOucNy&_nc_oc=Adrx0oxCGWcDRB7TxazXhcNHtSwjwZf_Us1JH6cA895dYIB_thA6G4lwLm3OdKq8eNY&_nc_zt=23&_nc_ht=scontent.fscl18-1.fna&_nc_gid=5pJMbXfy0vs1vkh_KXJvIg&_nc_ss=7b2a8&oh=00_AQL6En76XiLB7CEOlQLWoTwEE5Zt32POqvjGiaGmhK-G4A&oe=6A9FB87A" alt="Logo AsereBarberShop">
+        </div>
+        <div class="tarjeta-info">
+            <h3>AsereBarberShop</h3>
+            <p>Av. Irarrázaval 2401, Ñuñoa, Santiago</p>
+        </div>
     </a>
 
+    <!-- FOOTER CON BARBEROS -->
+    <footer class="footer-barberos">
+        <div class="container-footer">
+            <div class="barberos-contacto">
+                <h3>Nuestros Barberos</h3>
+
+                <div class="lista-barberos-footer">
+                    <div class="barbero-footer">
+                        <strong>Rafael Miotta</strong><br>
+                        📞 +56 9 8765 4321<br>
+                        📸 @rafael.miotta.barber
+                    </div>
+
+                    <div class="barbero-footer">
+                        <strong>Kevin Araya</strong><br>
+                        📞 +56 9 7654 3210<br>
+                        📸 @kevin.araya.cuts
+                    </div>
+
+                    <div class="barbero-footer">
+                        <strong>Javier Caro</strong><br>
+                        📞 +56 9 6543 2109<br>
+                        📸 @javier.caro.style
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/agenda.js"></script>
 </body>
 </html>
