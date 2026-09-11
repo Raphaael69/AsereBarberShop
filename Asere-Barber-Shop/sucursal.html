@@ -19,7 +19,7 @@
 
     <!-- Logo -->
     <div class="logo-sucursal">
-        <img src="https://scontent.fscl18-1.fna.fbcdn.net/v/t39.30808-6/793436595_2953091615043195_4191550733602557492_n.jpg?stp=dst-jpg_tt6&cstp=mx1024x1024&ctp=s1024x1024&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGoQwX-djt-WILl4w-Ux83n6pf-68epN8Tql_7rx6k3xPd9LUtSit1TlyT8m4xd_YzSGFDjZtShdxL8zGnRtsmw&_nc_ohc=FLUX2xma_pMQ7kNvwFOucNy&_nc_oc=Adrx0oxCGWcDRB7TxazXhcNHtSwjwZf_Us1JH6cA895dYIB_thA6G4lwLm3OdKq8eNY&_nc_zt=23&_nc_ht=scontent.fscl18-1.fna&_nc_gid=5pJMbXfy0vs1vkh_KXJvIg&_nc_ss=7b2a8&oh=00_AQL6En76XiLB7CEOlQLWoTwEE5Zt32POqvjGiaGmhK-G4A&oe=6A9FB87A" alt="Logo AsereBarberShop">
+        <img src="images/logo.png" alt="Logo AsereBarberShop">
     </div>
 
     <!-- Profesionales -->
@@ -35,8 +35,8 @@
             <h3>Kevin Araya</h3>
         </div>
         <div class="barbero">
-            <div class="avatar">JC</div>
-            <h3>Javier Caro</h3>
+            <div class="avatar">EC</div>
+            <h3>Eduardo Caro</h3>
         </div>
     </div>
 
@@ -84,8 +84,8 @@
         <div id="paso-barberos">
             <h3>Elige tu barbero</h3>
             <label><input type="radio" name="barbero" value="Rafael Miotta"> Rafael Miotta</label><br>
-            <label><input type="radio" name="barbero" value="Kevin Arraya"> Kevin Arraya</label><br>
-            <label><input type="radio" name="barbero" value="Javier Caro"> Javier Caro</label>
+            <label><input type="radio" name="barbero" value="Kevin Araya"> Kevin Araya</label><br>
+            <label><input type="radio" name="barbero" value="Eduardo Caro"> Eduardo Caro</label>
 
             <br><br>
 
@@ -101,6 +101,26 @@
             <br>
             <button onclick="irAFormulario()">Siguiente →</button>
         </div>
+        <!-- Paso 2.5: Iniciar sesión -->
+        <div id="paso-login" class="login-box">
+            <h3>Iniciar sesión</h3>
+
+            <form id="form-login-reserva">
+                <div class="campo">
+                    <label for="usuario-reserva">Usuario</label>
+                    <input type="text" id="usuario-reserva" placeholder="Tu usuario" required>
+                </div>
+
+                <div class="campo">
+                    <label for="password-reserva">Contraseña</label>
+                    <input type="password" id="password-reserva" placeholder="Tu contraseña" required>
+                </div>
+
+                <button type="submit" class="btn-entrar">Entrar</button>
+            </form>
+
+            <p class="texto-crear">¿No tienes cuenta? <a href="#" id="btn-crear-cuenta">Crear una cuenta</a></p>
+        </div>
 
         <!-- Paso 3: Formulario -->
         <div id="paso-formulario">
@@ -115,6 +135,10 @@
                         <label for="apellido" class="form-label">Apellido</label>
                         <input type="text" class="form-control" id="apellido" name="apellido">
                     </div>
+                </div>
+                <div class="mb-3">
+                    <label for="rut" class="form-label">RUT</label>
+                    <input type="text" class="form-control" id="rut" name="rut" required>
                 </div>
 
                 <div class="mb-3">

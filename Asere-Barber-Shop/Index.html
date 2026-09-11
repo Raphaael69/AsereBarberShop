@@ -11,7 +11,10 @@
     <!-- HEADER -->
     <header class="top-header">
         <h1>Bienvenido a AsereBarberShop</h1>
-        <a href="#" class="btn-login" id="btn-mostrar-login">Iniciar sesión</a>
+        <div class="zona-usuario">
+            <a href="#" class="btn-login" id="btn-mostrar-login">Iniciar sesión</a>
+            <a href="#" class="btn-login" id="btn-cerrar-sesion">Cerrar sesión</a>
+        </div>
     </header>
 
     <hr class="linea-separadora">
@@ -37,6 +40,38 @@
         <p class="texto-crear">¿No tienes cuenta? <a href="#">Crear una cuenta</a></p>
     </div>
 
+    <!-- FORMULARIO DE REGISTRO (oculto al inicio) -->
+    <div id="registro-box" class="login-box">
+        <h3>Crear cuenta</h3>
+
+        <form id="form-registro-index">
+             <div class="campo">
+                <label for="registro-nombre">Nombre</label>
+                <input type="text" id="registro-nombre" placeholder="Nombre" required>
+            </div>
+            <div class="campo">
+                <label for="registro-apellido">Apellido</label>
+                <input type="text" id="registro-apellido" placeholder="Apellido" required>
+            </div>
+            <div class="campo">
+                <label for="registro-rut">RUT</label>
+                <input type="text" id="registro-rut" placeholder="12.345.678-9" required>
+            </div>
+
+            <div class="campo">
+                <label for="registro-correo">Correo electrónico</label>
+                <input type="email" id="registro-correo" placeholder="tu@correo.com" required>
+            </div>
+
+            <div class="campo">
+                <label for="registro-password">Contraseña</label>
+                <input type="password" id="registro-password" placeholder="Crea una contraseña" required>
+            </div>
+
+            <button type="submit" class="btn-entrar">Registrarse</button>
+        </form>
+    </div>
+
     <!-- DESCRIPCIÓN -->
     <p class="descripcion">
         En AsereBarberShop ofrecemos una experiencia de barbería que combina estilo y cuidado personal. 
@@ -49,7 +84,7 @@
     <!-- TARJETA SUCURSAL -->
     <a href="sucursal.html" class="tarjeta-sucursal">
         <div class="tarjeta-img">
-            <img src="https://scontent.fscl18-1.fna.fbcdn.net/v/t39.30808-6/793436595_2953091615043195_4191550733602557492_n.jpg?stp=dst-jpg_tt6&cstp=mx1024x1024&ctp=s1024x1024&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGoQwX-djt-WILl4w-Ux83n6pf-68epN8Tql_7rx6k3xPd9LUtSit1TlyT8m4xd_YzSGFDjZtShdxL8zGnRtsmw&_nc_ohc=FLUX2xma_pMQ7kNvwFOucNy&_nc_oc=Adrx0oxCGWcDRB7TxazXhcNHtSwjwZf_Us1JH6cA895dYIB_thA6G4lwLm3OdKq8eNY&_nc_zt=23&_nc_ht=scontent.fscl18-1.fna&_nc_gid=5pJMbXfy0vs1vkh_KXJvIg&_nc_ss=7b2a8&oh=00_AQL6En76XiLB7CEOlQLWoTwEE5Zt32POqvjGiaGmhK-G4A&oe=6A9FB87A" alt="Logo AsereBarberShop">
+            <img src="images/logo.png" alt="Logo AsereBarberShop">
         </div>
         <div class="tarjeta-info">
             <h3>AsereBarberShop</h3>
@@ -77,9 +112,9 @@
                     </div>
 
                     <div class="barbero-footer">
-                        <strong>Javier Caro</strong><br>
+                        <strong>Eduardo Caro</strong><br>
                         📞 +56 9 6543 2109<br>
-                        📸 @javier.caro.style
+                        📸 @eduardo.caro.cuts
                     </div>
                 </div>
             </div>

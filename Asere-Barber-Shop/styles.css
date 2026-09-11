@@ -36,6 +36,17 @@ body {
     text-transform: uppercase;
 }
 
+/* ================== ZONA USUARIO (login / cerrar sesión) ================== */
+.zona-usuario {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#btn-cerrar-sesion {
+    display: none;
+}
+
 /* ================== BOTÓN LOGIN ================== */
 .btn-login {
     text-decoration: none;
@@ -414,5 +425,9 @@ body {
 #paso-calendario,
 #paso-barberos,
 #paso-formulario {
+    display: none;
+}
+
+#paso-login {
     display: none;
 }
